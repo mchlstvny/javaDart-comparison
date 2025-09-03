@@ -12,6 +12,10 @@ class Product {
     void displayInfo() {
         System.out.println(name + ": $" + price);
     }
+
+    void use() {
+        System.out.println(name + " is being used");
+    }
 }
 
 public class ClassObject {

@@ -5,13 +5,17 @@ class Product {
     Product(this.name, this.price);
 
     void display() {
-      print("Product Name: $name");
-      print("Product Price: \$${price.toStringAsFixed(2)}");
-    }
+      print("$name: \$$price");
+  }
+  
+    void use() {
+    print('$name is being used');
+  }
 }
 
 void main() {
-  Product laptop = Product("Laptop", 1000.00);
+  Product laptop = Product("Laptop", 2000.0);
   laptop.display();
 }
+
 

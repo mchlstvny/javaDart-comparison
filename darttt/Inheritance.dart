@@ -8,7 +8,7 @@ class Laptop extends Product {
   Laptop(String name, double price, this.storage, this.ram) : super(name, price);
 
   void displayInfo() {
-    print("$name: \$$price, RAM ${ram}GB");
+    print("$name: \$$price, Storage ${512}GB, RAM ${ram}GB");
   }
 }
 

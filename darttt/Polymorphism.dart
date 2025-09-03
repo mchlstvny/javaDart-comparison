@@ -1,24 +1,16 @@
-class Product {
-  String name;
-  double price;
+import 'ClassObject.dart';
+// import 'Inheritance.dart';
 
-  Product(this.name, this.price);
+// class Laptop extends Product {
+//   int ram;
 
-  void use() {
-    print('$name is being used');
-  }
-}
+//   Laptop(String name, double price, this.ram) : super(name, price);
 
-class Laptop extends Product {
-  int ram;
-
-  Laptop(String name, double price, this.ram) : super(name, price);
-
-  @override
-  void use() {
-    print('$name is running programs with $ram GB RAM');
-  }
-}
+//   @override
+//   void use() {
+//     print('$name is running programs with $ram GB RAM');
+//   }
+// }
 
 class Phone extends Product {
   String brand;
@@ -31,9 +23,20 @@ class Phone extends Product {
   }
 }
 
+class iPad extends Product {
+  String brand;
+
+  iPad(String name, double price, this.brand) : super(name, price);
+
+  @override
+  void use() {
+    print('$name is browsing the internet from $brand');
+  }
+}
+
 void main() {
   List<Product> products = [
-    Laptop('MacBook Pro', 2000, 16),
+    iPad('iPad Gen 11', 2000, 'Apple'),
     Phone('iPhone 15', 1200, 'Apple')
   ];
 
